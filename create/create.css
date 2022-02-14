@@ -134,7 +134,33 @@ li {
     box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
 }
 
+.border{
+    width: 60%;
+    height: 0.5px;
+    background-color: rgb(153, 153, 153);
+    /* box-shadow: 0 -22px 22px -22px zrgba(0, 0, 0, 0.05); */
+    margin: 5% auto;
+    
+}
 
+.Question{
+    width: 60%;
+    margin: 0 auto 70px;
+}
+.Question h2{
+    text-align: center;
+}
+
+.Question div button{
+    width:100%;
+    height: 2.4em;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
 
 
 
@@ -147,7 +173,7 @@ li {
 
 
 footer{
-    box-shadow: 0 -22px 22px -22px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -20px 22px -20px rgb(216, 216, 216);
 }
 
 
