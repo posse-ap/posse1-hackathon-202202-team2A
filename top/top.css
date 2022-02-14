@@ -207,3 +207,14 @@
     .example_img img {
         width: 100%;
     }
+    
+    .create_button {
+        margin: 0 auto;
+        width: 20%;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 0 10px;
+        background: #ba7ce4;
+        border-radius: 100%;
+    }
