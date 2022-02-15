@@ -41,7 +41,7 @@ for(let i = 0; i<questions.length; i++){
     for(let j = 0; j<questions[0].length; j++){
         questions[i][j].addEventListener('click',function(){
             for(let k = 1;k<questions[0].length;k++){
-                questions[i][(j+k)%4].style.backgroundColor='gray';
+                questions[i][(j+k)%4].style.backgroundColor='#1C658C';
                 if(questions[i][j].classList.contains('chosen')){
                     questions[i][(j+k)%4].style.backgroundColor='';
                 }    
