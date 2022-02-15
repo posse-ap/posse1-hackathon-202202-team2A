@@ -1,5 +1,5 @@
 'use strict'
-$('.nav_toggle').on('click', function () {
+$('.nav_toggle').on('click', function() {
     $('.nav_toggle, .nav').toggleClass('show');
 });
 
@@ -26,40 +26,38 @@ const Q54 = document.getElementById("Q5-4");
 const create = document.getElementById("create");
 
 let color = [];
-let questions =[ 
-    [Q11,Q12,Q13,Q14],
-    [Q21,Q22,Q23,Q24],
-    [Q31,Q32,Q33,Q34],
-    [Q41,Q42,Q43,Q44],
-    [Q51,Q52,Q53,Q54]
+let questions = [
+    [Q11, Q12, Q13, Q14],
+    [Q21, Q22, Q23, Q24],
+    [Q31, Q32, Q33, Q34],
+    [Q41, Q42, Q43, Q44],
+    [Q51, Q52, Q53, Q54]
 ];
 
 // 選択肢を押したときに
-for(let i = 0; i<questions.length; i++){
+for (let i = 0; i < questions.length; i++) {
     // 選択肢と他の選択肢の色を変える
     // すでに押されているときに押されたときは初期状態に戻る
-    for(let j = 0; j<questions[0].length; j++){
-        questions[i][j].addEventListener('click',function(){
-            for(let k = 1;k<questions[0].length;k++){
-                questions[i][(j+k)%4].style.backgroundColor='#1C658C';
-                if(questions[i][j].classList.contains('chosen')){
-                    questions[i][(j+k)%4].style.backgroundColor='';
-                }    
-                if(questions[i][(j+k)%4].classList.contains('chosen')){
-                    questions[i][(j+k)%4].classList.remove('chosen');
-                    questions[i][j].style.backgroundColor='';
+    for (let j = 0; j < questions[0].length; j++) {
+        questions[i][j].addEventListener('click', function() {
+            for (let k = 1; k < questions[0].length; k++) {
+                questions[i][(j + k) % 4].style.backgroundColor = '#1C658C';
+                if (questions[i][j].classList.contains('chosen')) {
+                    questions[i][(j + k) % 4].style.backgroundColor = '';
+                }
+                if (questions[i][(j + k) % 4].classList.contains('chosen')) {
+                    questions[i][(j + k) % 4].classList.remove('chosen');
+                    questions[i][j].style.backgroundColor = '';
                 }
             }
             questions[i][j].classList.toggle('chosen');
             // createbuttonが押されたときに選んだ選択肢を配列で取得出来る
             console.log(`ok${i}${j}`)
-            create.addEventListener('click',function(){
-                if(questions[i][j].classList.contains('chosen')){
-                            color.push(questions[i][j].getAttribute('data-number'));                            
-                        }
+            create.addEventListener('click', function() {
+                if (questions[i][j].classList.contains('chosen')) {
+                    color.push(questions[i][j].getAttribute('data-number'));
+                }
             })
-        })    
+        })
     }
 }
-
-

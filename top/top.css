@@ -115,6 +115,7 @@
     }
     
     .firstview_text {
+        white-space: nowrap;
         position: absolute;
         font-size: 300px;
         white-space: nowrap;
@@ -122,10 +123,7 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         text-align: center;
-    }
-    
-    .firstview_text h1 {
-        font-family: 'Oswald', sans-serif;
+        font-size: 300px;
     }
     
     footer {
@@ -252,7 +250,7 @@
     .create_button {
         margin: 0 auto;
         width: 20%;
-        font-size: 12px;
+        /* font-size: 12px; */
         color: #FFFFFF;
         text-align: center;
         padding: 10px 0 10px;
