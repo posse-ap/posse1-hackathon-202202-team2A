@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo34</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="circle"></div>
+        <div class="triangle"></div>
+
+    </div>
+</body>
+<style>
+    .cover {
+        position: absolute;
+      margin: 10px auto;
+      background: #ffffff;
+      height: 300px;
+      width: 300px;
+      padding-bottom: 30px;
+
+
+    }
+    .circle {
+      background: #f9e492;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+    }
+    .triangle {
+      position: absolute;
+      top: 234px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 100px;
+      background: #4f77ff;
+      clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+      overflow: hidden;
+    }
+    .triangle::after {
+      content: "";
+      background: #191919;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -109px);
+      border-radius: 100%;
+    }
+</style>
+</html>

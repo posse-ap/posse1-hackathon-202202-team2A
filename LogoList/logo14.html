@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo14</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="ice"></div>
+        <div class="stick"></div>
+
+    </div>
+</body>
+<style>
+    .cover {
+      background: #ffffff;
+      height: 260px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .ice {
+      width: 100px;
+      height: 150px;
+      background: #FFF1C1;
+      border-radius: 50px 50px 20px 20px;
+    }
+    .stick {
+      width: 30px;
+      height: 50px;
+      background: #FE5F55;
+      border-radius: 0 0 10px 10px;
+    }
+    .stick::after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 10px;
+      background: #A64942;
+    }
+</style>
+</html>
