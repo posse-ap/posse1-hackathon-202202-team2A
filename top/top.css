@@ -107,7 +107,6 @@
         background-position: center 80%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: rgba(77, 79, 42, 0.3);
         background-blend-mode: multiply;
         position: relative;
         height: 760px;
@@ -116,10 +115,16 @@
     
     .firstview_text {
         position: absolute;
-        top: 50%;
+        font-size: 300px;
+        white-space: nowrap;
+        top: 20%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         text-align: center;
+    }
+    
+    .firstview_text h1 {
+        font-family: 'Oswald', sans-serif;
     }
     
     footer {
