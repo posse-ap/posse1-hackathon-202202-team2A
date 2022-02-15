@@ -188,7 +188,7 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-duration: 1s; */
-        /* デフォで非表示 */
+        /* デフォで非表示 */ 
         opacity: 0;
         visibility: hiddden;
     }
