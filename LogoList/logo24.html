@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo24</title>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="rect"></div>
+        <div class="rect y"></div>
+        <div class="square"></div>
+
+    </div>
+</body>
+<style>
+    html{
+        height: 600px;
+    }
+    .cover {
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 250px;
+        margin: auto;
+    }
+
+    .rect {
+        position: absolute;
+        background: #A3A368;
+        width: 50px;
+        height: 200px;
+        transform: rotate(45deg);
+        top: 0px;
+    }
+    
+    .rect.y {
+        background: #F3AC3C;
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    
+    .square {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #FBE18C;
+        transform: rotate(45deg);
+        top: 75px;
+    }
+</style>
+
+</html>

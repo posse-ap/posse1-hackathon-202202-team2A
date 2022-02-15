@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo12</title>
+</head>
+<body>
+    <div class="cover">
+
+        <div class="wrapper">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </div>
+</body>
+<style>
+    .cover {
+        background: #ffffff;
+        margin: 0;
+        width: 300px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 280px;
+        height: 130px;
+        margin: 85px auto;
+    }
+
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-top: 130px solid #FF6D00;
+        z-index: 1;
+    }
+
+    .triangle:nth-child(2) {
+        border-top-color: #FD4602;
+        left: 20px;
+        z-index: 0;
+    }
+
+    .triangle:nth-child(3) {
+        transform: scaleY(-1);
+        border-top-color: #FD4602;
+        left: 110px;
+        z-index: 1;
+    }
+
+    .triangle:nth-child(4) {
+        transform: scaleY(-1);
+        left: 130px;
+        z-index: 0;
+    }
+</style>
+
+</html>

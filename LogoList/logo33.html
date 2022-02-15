@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo33</title>
+</head>
+<body>
+    <div class="cover">
+        
+        <div class="square"></div>
+    </div>
+</body>
+<style>
+    .cover{
+      margin: 0;
+      background: #ffffff;
+      display: flex;
+      height: 270px;
+      width: 250px;
+      justify-content: center;
+      /* align-items: center; */
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      background: #f7f3da;
+      margin-top: 100px;
+      position: relative;
+      top: 20px;
+    }
+    .square:before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #6cb3a9;
+      transform: translate(-36px, -72px) rotate(37deg);
+    }
+    .square:after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      right: 0;
+      background: #f6df96;
+      transform: translate(32px, -96px) rotate(37deg);
+    }
+  </style>
+</html>
