@@ -107,6 +107,7 @@
         background-position: center 80%;
         background-size: cover;
         background-repeat: no-repeat;
+        background-color: rgba(230, 234, 230, 0.3);
         background-blend-mode: multiply;
         position: relative;
         height: 760px;
