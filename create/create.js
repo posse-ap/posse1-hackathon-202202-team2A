@@ -55,19 +55,19 @@ for(let i = 0; i<questions.length; i++){
             // chosen classがついているとき(選択時)といないときの色
             for(let l = 0;l<questions[0].length;l++)
             if(questions[i][(j+l)%4].classList.contains('chosen')){
-                questions[i][(j+l)%4].style.backgroundColor='yellow';//選択時の背景色
-                questions[i][(j+l)%4].style.color='#1572a1';//選択時の文字色
+                questions[i][(j+l)%4].style.backgroundColor='#22577E';//選択時の背景色
+                questions[i][(j+l)%4].style.color='#95D1CC';//選択時の文字色
             }else if(questions[i][(j+l)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+1)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+2)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+3)%4].classList.contains('chosen')!=true){
                             for(let m=0;m<4;m++){
-                            questions[i][(j+l+m)%4].style.backgroundColor='white';//どれ選択していないときの背景色
-                            questions[i][(j+l+m)%4].style.color='black';//どれも選択していないときの文字色
+                            questions[i][(j+l+m)%4].style.backgroundColor='#9AD0EC';//どれ選択していないときの背景色
+                            questions[i][(j+l+m)%4].style.color='#1572a1';//どれも選択していないときの文字色
                             }
             }else{
-                questions[i][(j+l)%4].style.backgroundColor='gray';//非選択時の背景色
-                questions[i][(j+l)%4].style.color='blue';//非選択時の文字色
+                questions[i][(j+l)%4].style.backgroundColor='white';//非選択時の背景色
+                questions[i][(j+l)%4].style.color='#5584AC';//非選択時の文字色
             }
             // createbuttonが押されたときに選んだ選択肢を配列で取得出来る
             console.log(`ok${i}${j}`)
@@ -96,6 +96,19 @@ for(let i = 0; i<questions.length; i++){
 //     console.log(birthdayValue);
 // });
 
+
+
+
+
+
+// questions[0][0].addEventListener('click',function(){
+//     const namearea = document.getElementById('namearea');
+//     const nameValue = namearea.value;
+//     console.log(nameValue);
+//     const birthday = document.getElementById('birthday');
+//     const birthdayValue = birthday.value;
+//     console.log(birthdayValue);
+// });
 
 
 const contents11=
@@ -385,6 +398,7 @@ const contents43=
 +`    .right {margin-top: -100px;background: #F3AC3C;width: 100px;height: 100px;border-top-right-radius: 100px;}`
 +`</style>`
 const contents44=
+
 +`<body>`
 +`    <div class="cover">`
 +`        <div class="triangle"></div>`
@@ -420,4 +434,20 @@ document.getElementById('display').insertAdjacentHTML('beforeend',shape);
 
 
 
+
+`+<body>`
+`+    <div class="cover">`
+`+        <div class="triangle"></div>`
+`+        <div class="triangle2"></div>`
+`+        <div class="triangle3"></div>`
+`+    </div>`
+`+    <h1>${nameValue}</h1>`
+`+</body>`
+`+<style>`
+`+h1{position: absolute;width: 250px;text-align: center;top: 170px;}`
+`+.cover{position: relative;margin: 0;height: 250px;width: 250px;}`
+`+.triangle{position: absolute;top: 10px;left: 80px;border-right: 50px solid transparent;border-bottom: 86.6025px solid #b2ce54;border-left: 50px solid transparent;}`
+`+.triangle2{position: absolute;top: 95px;left: 30px;border-right: 50px solid transparent;border-bottom: 86.6025px solid #9ebfd3;border-left: 50px solid transparent;}`
+`+.triangle3{position: absolute;top: 95px;left:130px ;border-right: 50px solid transparent;border-bottom: 86.6025px solid #eb6a6a;border-left: 50px solid transparent;}`
+`+</style>`
 
