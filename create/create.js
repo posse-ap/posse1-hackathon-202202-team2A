@@ -50,19 +50,19 @@ for(let i = 0; i<questions.length; i++){
             // chosen classがついているとき(選択時)といないときの色
             for(let l = 0;l<questions[0].length;l++)
             if(questions[i][(j+l)%4].classList.contains('chosen')){
-                questions[i][(j+l)%4].style.backgroundColor='yellow';//選択時の背景色
-                questions[i][(j+l)%4].style.color='#1572a1';//選択時の文字色
+                questions[i][(j+l)%4].style.backgroundColor='#22577E';//選択時の背景色
+                questions[i][(j+l)%4].style.color='#95D1CC';//選択時の文字色
             }else if(questions[i][(j+l)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+1)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+2)%4].classList.contains('chosen')!=true&&
                     questions[i][(j+l+3)%4].classList.contains('chosen')!=true){
                             for(let m=0;m<4;m++){
-                            questions[i][(j+l+m)%4].style.backgroundColor='white';//どれ選択していないときの背景色
-                            questions[i][(j+l+m)%4].style.color='black';//どれも選択していないときの文字色
+                            questions[i][(j+l+m)%4].style.backgroundColor='#9AD0EC';//どれ選択していないときの背景色
+                            questions[i][(j+l+m)%4].style.color='#1572a1';//どれも選択していないときの文字色
                             }
             }else{
-                questions[i][(j+l)%4].style.backgroundColor='gray';//非選択時の背景色
-                questions[i][(j+l)%4].style.color='blue';//非選択時の文字色
+                questions[i][(j+l)%4].style.backgroundColor='white';//非選択時の背景色
+                questions[i][(j+l)%4].style.color='#5584AC';//非選択時の文字色
             }
             // createbuttonが押されたときに選んだ選択肢を配列で取得出来る
             console.log(`ok${i}${j}`)
@@ -78,54 +78,54 @@ for(let i = 0; i<questions.length; i++){
 
 
 
-const contents11=
-`<body>`
-`+    <div class="cover">`
-`+        <div class="wrapper">`
-`+            <div class="leaf"></div>`
-`+            <div class="leaf"></div>`
-`+            <div class="leaf"></div>`
-`+        </div>`
-`+        <h1>SHIHO</h1> `
-`+    </div>`
-`+</body>`
-`+    <style>`
-`+        .cover {background: #ffffff;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 250px;}h1{text-align: center;font-size: 50px;}.wrapper {position: relative;height: 150px;width: 250px;}.leaf:first-child {left: 40px;background: #1A4341;}.leaf:nth-child(2) {left: 80px;background: #998235;}.leaf:nth-child(3) {left: 120px;background: #F3AC3C;}.leaf {top: 20px;position: absolute;width: 120px;height: 120px;border-top-left-radius: 67%;border-bottom-right-radius: 67%;}`
-`+    </style>`
+// const contents11=
+// `<body>`
+// `+    <div class="cover">`
+// `+        <div class="wrapper">`
+// `+            <div class="leaf"></div>`
+// `+            <div class="leaf"></div>`
+// `+            <div class="leaf"></div>`
+// `+        </div>`
+// `+        <h1>SHIHO</h1> `
+// `+    </div>`
+// `+</body>`
+// `+    <style>`
+// `+        .cover {background: #ffffff;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 250px;}h1{text-align: center;font-size: 50px;}.wrapper {position: relative;height: 150px;width: 250px;}.leaf:first-child {left: 40px;background: #1A4341;}.leaf:nth-child(2) {left: 80px;background: #998235;}.leaf:nth-child(3) {left: 120px;background: #F3AC3C;}.leaf {top: 20px;position: absolute;width: 120px;height: 120px;border-top-left-radius: 67%;border-bottom-right-radius: 67%;}`
+// `+    </style>`
 
-const contents12=
-<body>
-    <div class="cover">
-        <div class="wrapper">
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-        </div>
-        <h1>SHIHO</h1>
-    </div>
-</body>
-<style>
-    h1{text-align: center;}.cover {display: flex;flex-direction: column;background: #ffffff;margin: 0;width: 250px;height: 250px;top: 50%;left: 50%;}
-    .wrapper {position: relative;width: 280px;height: 130px;margin: 85px auto;}
-    .triangle {top: 10px;left: 30px;position: absolute;width: 0;height: 0;border-left: 40px solid transparent;border-right: 40px solid transparent;border-top: 100px solid #FF6D00;z-index: 1;}
-    .triangle:nth-child(2) {border-top-color: #FD4602;left: 50px;z-index: 0;}
-    .triangle:nth-child(3) {transform: scaleY(-1);border-top-color: #FD4602;left: 100px;z-index: 1;}
-    .triangle:nth-child(4) {transform: scaleY(-1);left: 120px;z-index: 0;}
-</style>
+// const contents12=
+// <body>
+//     <div class="cover">
+//         <div class="wrapper">
+//             <div class="triangle"></div>
+//             <div class="triangle"></div>
+//             <div class="triangle"></div>
+//             <div class="triangle"></div>
+//         </div>
+//         <h1>SHIHO</h1>
+//     </div>
+// </body>
+// <style>
+//     h1{text-align: center;}.cover {display: flex;flex-direction: column;background: #ffffff;margin: 0;width: 250px;height: 250px;top: 50%;left: 50%;}
+//     .wrapper {position: relative;width: 280px;height: 130px;margin: 85px auto;}
+//     .triangle {top: 10px;left: 30px;position: absolute;width: 0;height: 0;border-left: 40px solid transparent;border-right: 40px solid transparent;border-top: 100px solid #FF6D00;z-index: 1;}
+//     .triangle:nth-child(2) {border-top-color: #FD4602;left: 50px;z-index: 0;}
+//     .triangle:nth-child(3) {transform: scaleY(-1);border-top-color: #FD4602;left: 100px;z-index: 1;}
+//     .triangle:nth-child(4) {transform: scaleY(-1);left: 120px;z-index: 0;}
+// </style>
 
-const contents13=
-const contents14=
-const contents21=
-const contents22=
-const contents23=
-const contents24=
-const contents31=
-const contents32=
-const contents33=
-const contents34=
-const contents41=
-const contents42=
-const contents43=
-const contents44=
+// const contents13=
+// const contents14=
+// const contents21=
+// const contents22=
+// const contents23=
+// const contents24=
+// const contents31=
+// const contents32=
+// const contents33=
+// const contents34=
+// const contents41=
+// const contents42=
+// const contents43=
+// const contents44=
 
