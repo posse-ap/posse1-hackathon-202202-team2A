@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo23</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="circle">
+            <div class="circle-in"></div>
+            <div class="helper"></div>
+            <div class="helper r"></div>
+        </div>
+
+    </div>
+
+</body>
+<style>
+            .cover {
+                background: #ffffff;
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                height: 250px;
+                width: 250px;
+            }
+        
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: #AA445F;
+                position: relative;
+                top: 0;
+            }
+        
+            .circle-in {
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                box-sizing: border-box;
+                border: 30px solid #F7EC7D;
+                border-radius: 50%;
+                left: 30px;
+                top: 30px;
+            }
+        
+            .helper {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background: #AA445F;
+                border-top-left-radius: 100px;
+            }
+        
+            .helper.r {
+                bottom: 0;
+                right: 0;
+                transform: scale(-1);
+            }
+    </style>
+        
+</html>

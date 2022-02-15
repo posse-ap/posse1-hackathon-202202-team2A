@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo21</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="wrap">
+            <div class="y"></div>
+            <div class="x"></div>
+        </div>
+        <div class="wrap reverse">
+            <div class="y"></div>
+            <div class="x"></div>
+        </div>
+
+    </div>
+</body>
+<style>
+        .cover {
+            background: rgb(255, 255, 255);
+            height: 250px;
+            width: 250px;
+            margin-left: 43%;
+        }
+    
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 50%;
+            top: 30px;
+        }
+    
+        .y {
+            width: 30px;
+            height: 100px;
+            background: #F2994A;
+            border-bottom-left-radius: 10px;
+        }
+    
+        .x {
+            width: 60px;
+            height: 30px;
+            background: #F2994A;
+            border-top-right-radius: 5px;
+            margin-top: -30px;
+            margin-left: 20px;
+        }
+    
+        .wrap.reverse {
+            transform: scale(-1, -1) rotate(45deg);
+            top: 80px;
+            left: 50%;
+        }
+    
+        .reverse .y,
+        .reverse .x {
+            background: #2D9CDB;
+        }
+</style>    
+</html>
