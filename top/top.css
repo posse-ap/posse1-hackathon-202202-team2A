@@ -103,11 +103,11 @@
     }
     
     .firstview {
-        background-image: url(../img/firstview.jfif);
+        background-image: url(../img/darkbluegeometric.jpg);
         background-position: center 80%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: rgba(77, 79, 42, 0.3);
+        background-color: rgba(230, 234, 230, 0.3);
         background-blend-mode: multiply;
         position: relative;
         height: 760px;
