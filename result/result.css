@@ -102,6 +102,12 @@ li {
     opacity: 1;
 }
 
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
     box-shadow: 0 -20px 22px -20px rgb(216, 216, 216);
 }
@@ -138,10 +144,4 @@ footer {
 .foot_bar_right a img {
     width: 13%;
     object-fit: contain;
-}
-
-.result {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
