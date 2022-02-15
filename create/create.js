@@ -34,11 +34,13 @@ let questions =[
     [Q51,Q52,Q53,Q54]
 ];
 for(let i = 0; i<questions.length; i++){
-    
-    // 選択肢ボタンを押したら、consoleでおした番号の確認ができ、
-    // chosen classをつける。押したボタンをcolorが配列で取得できる
     for(let j = 0; j<questions[0].length; j++){
         questions[i][j].addEventListener('click',function(){
+            for(let k = 1;k<questions[0].length;k++){
+                if(questions[i][(j+k)%4].classList.contains('chosen')){
+                    questions[i][(j+k)%4].classList.remove('chosen');
+                }
+            }
             questions[i][j].classList.toggle('chosen');
             console.log(`ok${i}${j}`)
             create.addEventListener('click',function(){
@@ -46,24 +48,8 @@ for(let i = 0; i<questions.length; i++){
                             color.push(questions[i][j].getAttribute('data-number'));                            
                         }
             })
-        })
-// chosen classを排他的にした
-        questions[i][j].addEventListener('click',function(){
-            for(let k = 1;k<questions[0].length;k++){
-            if(questions[i][(j+k)%4].classList.contains('chosen')){
-                questions[i][(j+k)%4].classList.remove('chosen');
-            }
-        }
-        })
+        })    
     }
 }
 
-
-
-
-// //posseのlogo押したら配列確認
-// const posseLogo = document.getElementById("posseLogo");
-// posseLogo.addEventListener('click',function(){
-// console.log(color);
-// })
 
