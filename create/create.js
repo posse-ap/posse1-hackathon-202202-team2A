@@ -37,8 +37,11 @@ for(let i = 0; i<questions.length; i++){
     for(let j = 0; j<questions[0].length; j++){
         questions[i][j].addEventListener('click',function(){
             for(let k = 1;k<questions[0].length;k++){
+                questions[i][(j+k)%4].style.backgroundColor='gray';
+
                 if(questions[i][(j+k)%4].classList.contains('chosen')){
                     questions[i][(j+k)%4].classList.remove('chosen');
+                    questions[i][j].style.backgroundColor='';
                 }
             }
             questions[i][j].classList.toggle('chosen');
