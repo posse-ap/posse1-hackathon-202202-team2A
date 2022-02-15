@@ -75,3 +75,57 @@ for(let i = 0; i<questions.length; i++){
     }
 }
 
+
+
+
+const contents11=
+`<body>`
+`+    <div class="cover">`
+`+        <div class="wrapper">`
+`+            <div class="leaf"></div>`
+`+            <div class="leaf"></div>`
+`+            <div class="leaf"></div>`
+`+        </div>`
+`+        <h1>SHIHO</h1> `
+`+    </div>`
+`+</body>`
+`+    <style>`
+`+        .cover {background: #ffffff;display: flex;flex-direction: column;justify-content: center;height: 250px;width: 250px;}h1{text-align: center;font-size: 50px;}.wrapper {position: relative;height: 150px;width: 250px;}.leaf:first-child {left: 40px;background: #1A4341;}.leaf:nth-child(2) {left: 80px;background: #998235;}.leaf:nth-child(3) {left: 120px;background: #F3AC3C;}.leaf {top: 20px;position: absolute;width: 120px;height: 120px;border-top-left-radius: 67%;border-bottom-right-radius: 67%;}`
+`+    </style>`
+
+const contents12=
+<body>
+    <div class="cover">
+        <div class="wrapper">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <h1>SHIHO</h1>
+    </div>
+</body>
+<style>
+    h1{text-align: center;}.cover {display: flex;flex-direction: column;background: #ffffff;margin: 0;width: 250px;height: 250px;top: 50%;left: 50%;}
+    .wrapper {position: relative;width: 280px;height: 130px;margin: 85px auto;}
+    .triangle {top: 10px;left: 30px;position: absolute;width: 0;height: 0;border-left: 40px solid transparent;border-right: 40px solid transparent;border-top: 100px solid #FF6D00;z-index: 1;}
+    .triangle:nth-child(2) {border-top-color: #FD4602;left: 50px;z-index: 0;}
+    .triangle:nth-child(3) {transform: scaleY(-1);border-top-color: #FD4602;left: 100px;z-index: 1;}
+    .triangle:nth-child(4) {transform: scaleY(-1);left: 120px;z-index: 0;}
+</style>
+
+const contents13=
+const contents14=
+const contents21=
+const contents22=
+const contents23=
+const contents24=
+const contents31=
+const contents32=
+const contents33=
+const contents34=
+const contents41=
+const contents42=
+const contents43=
+const contents44=
+
