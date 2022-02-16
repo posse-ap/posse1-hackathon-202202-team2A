@@ -259,6 +259,11 @@ footer{
 
 }
 
+.none{
+    display: none;
+}
+
+
 
  
 }
@@ -511,4 +516,8 @@ footer{
         color: #1572a1;
     }
     
+    .none{
+        display: none;
+    }
+
     }
