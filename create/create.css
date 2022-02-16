@@ -203,9 +203,9 @@ div.createlogo {
     text-align: center;
 }
 
-.createlogo a {
+.ready {
     color: black;
-    width: 10%;
+    width: 25%;
     padding: 2%;
     margin-bottom: 5.0%;
     background-color: rgb(255, 255, 255);
@@ -217,7 +217,7 @@ div.createlogo {
     justify-content: center;
 }
 
-a:hover {
+.ready:hover {
 background-color: #1572a1;
 transform: scale(1.1)
 }
@@ -422,10 +422,6 @@ object-fit: contain;
 }
 }
 
- 
-}
-
-
 /* responsive design for iphones! */
 @media screen and ( max-width:480px ) {
     header {
@@ -615,7 +611,7 @@ object-fit: contain;
         text-align: center;
     }
     
-    .createlogo a {
+    .ready {
         color: black;
         width: 40%;
         padding: 5%;

@@ -36,6 +36,7 @@ const allBox2 = document.getElementById("allBox2");
 // const namearea = document.getElementById("namearea");
 // let nameValue = namearea.value;
 
+// nameValue = "shiho"
 let color = [];
 let questions = [
   [Q11, Q12, Q13, Q14],
