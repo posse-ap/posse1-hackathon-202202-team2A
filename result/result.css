@@ -120,6 +120,8 @@ font-size: 50px;
 
 .emphasizeddrumroll {
     font-weight: bold;
+    color: #1c658c;
+
 }
 
 .explanation {
@@ -296,6 +298,7 @@ footer {
     
     .emphasizeddrumroll {
         font-weight: bold;
+        color: #1c658c;
     }
     
     .explanation {
