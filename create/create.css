@@ -222,6 +222,19 @@ background-color: #1572a1;
 transform: scale(1.1)
 }
 
+.share_button {
+    border: 50px;
+}
+.twitter-share-button {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 50px;
+    border-color: black;
+}
+
 footer{
     box-shadow: 0 -20px 22px -20px rgb(216, 216, 216);
 }
