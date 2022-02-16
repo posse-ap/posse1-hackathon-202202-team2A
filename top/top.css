@@ -173,7 +173,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgb(8, 136, 8);
+        background: #5584ac;
         width: 120px;
         height: 120px;
         border-radius: 100%;
@@ -281,12 +281,17 @@
     }
     
     .create_button {
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
         width: 20%;
         /* font-size: 12px; */
         color: #FFFFFF;
         text-align: center;
-        padding: 10px 0 10px;
-        background: #ba7ce4;
+        padding: 20px 10px 20px;
+        background: #95D1CC;
         border-radius: 100%;
+        font-weight: bold;
     }
